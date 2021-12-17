@@ -8,5 +8,6 @@ module.exports = {
       includeLocales: false,
       enableBridge: true
     }
-  }
+  },
+  publicPath: "./", // 构建好的文件输出到哪里
 }
