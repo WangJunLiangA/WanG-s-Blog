@@ -2,7 +2,7 @@
  * @Author: JunLiang.Wang 
  * @Date: 2021-12-17 18:07:47 
  * @Last Modified by: JunLiang.Wang
- * @Last Modified time: 2021-12-17 18:12:48
+ * @Last Modified time: 2021-12-18 01:38:22
  * @props: (languageList)Store a list of all languages. See props for the specific structure
            (currentLanguage)current select Language Key
  * @methods: (handleCommand) This event is triggered when change language
@@ -55,7 +55,7 @@ export default {
 <style scoped>
 .lanbtn {
   cursor: pointer;
-  padding: 3px;
+    padding: 4px 2px;
   border-radius: 3px;
 }
 .lanbtn:hover {

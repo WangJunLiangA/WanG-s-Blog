@@ -2,7 +2,7 @@
  * @Author: JunLiang.Wang 
  * @Date: 2021-12-17 17:05:44 
  * @Last Modified by: JunLiang.Wang
- * @Last Modified time: 2021-12-17 17:24:14
+ * @Last Modified time: 2021-12-18 01:04:42
  * @props: (name)logo display name
  * @methods: (logoClick) This event is triggered when the logo is clicked
  */
@@ -135,6 +135,7 @@ figure:hover {
   font-size: 1.6em;
   font-weight: bold;
   color: #9e1900;
+  background: transparent;
 }
 
 @-webkit-keyframes rotate-in-center {
