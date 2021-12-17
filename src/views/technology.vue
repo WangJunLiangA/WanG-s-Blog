@@ -1,12 +1,12 @@
 <template>
   <div>
-      homePage
+      technologyPage
   </div>
 </template>
 
 <script>
 export default {
-   name:"home"
+   name:"technology"
 }
 </script>
 
