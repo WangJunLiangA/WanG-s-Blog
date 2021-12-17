@@ -18,6 +18,21 @@ main {
   background: #fafafa;
 }
 
+.column{
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.row{
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.ver-hor-center{  
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
 ::-webkit-scrollbar {
   width: 7px;
