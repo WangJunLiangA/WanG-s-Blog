@@ -1,14 +1,23 @@
 /*
  * @Author: JunLiang.Wang 
  * @Date: 2021-12-20 15:36:05 
- * @Last Modified by:   JunLiang.Wang 
- * @Last Modified time: 2021-12-20 15:36:05 
+ * @Last Modified by: JunLiang.Wang
+ * @Last Modified time: 2021-12-20 16:11:25
  */
 <template>
   <main>
+    <!--头部导航栏-->
     <navigation></navigation>
+    <!------------->
+
+    <!--主要内容-->
     <article><router-view /></article>
+    <!----------->
+    
+    <!--脚步导航栏-->
     <foot></foot>
+    <!------------->
+
   </main>
 </template>
 

@@ -1,11 +1,17 @@
 /*
  * @Author: JunLiang.Wang 
  * @Date: 2021-12-20 15:35:44 
- * @Last Modified by:   JunLiang.Wang 
- * @Last Modified time: 2021-12-20 15:35:44 
+ * @Last Modified by: JunLiang.Wang
+ * @Last Modified time: 2021-12-20 16:10:19
+ * @props: (footTitle) footer Title
+           (linkList) footer link List
+           (langPre) internationalization file prefix
+
  */
 <template>
   <footer class="column ver-hor-center">
+
+    <!--链接列表-->
     <div>
       <a
         v-for="(item, index) in linkList"
@@ -14,7 +20,11 @@
         >{{ $t(langPre + item.name) }}</a
       >
     </div>
+    <!------------>
+
+    <!--脚标题-->
     <p>{{ footTitle }}</p>
+    <!--------->
   </footer>
 </template>
 
@@ -22,20 +32,23 @@
 export default {
   name: "foot",
   props: {
+    //脚标题
     footTitle: {
       type: String,
       default: "@2021 Site By JunLiangWang",
     },
+    //国际化文件的前缀
     langPre: {
       type: String,
       default: "foot.",
     },
+    //脚步链接列表
     linkList: {
       type: Array,
       default: () => [
         {
-          name: "goodSite",
-          router: "/home",
+          name: "goodSite", //国际化文件的Key
+          router: "/home", //路由地址
         },
         {
           name: "tellMe",

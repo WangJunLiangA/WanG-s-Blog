@@ -2,9 +2,9 @@
  * @Author: JunLiang.Wang 
  * @Date: 2021-12-18 01:11:47 
  * @Last Modified by: JunLiang.Wang
- * @Last Modified time: 2021-12-20 15:13:53
+ * @Last Modified time: 2021-12-20 16:03:02
  * @props: (display) Is the navigation bar displayed
- * @solt: logo and item 
+ * @solt: logo 、item and foot
  */
 <template>
   <div v-if="display" class="mo-nav-div">

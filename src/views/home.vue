@@ -2,31 +2,38 @@
  * @Author: JunLiang.Wang 
  * @Date: 2021-12-20 12:05:55 
  * @Last Modified by: JunLiang.Wang
- * @Last Modified time: 2021-12-20 15:35:59
+ * @Last Modified time: 2021-12-20 16:13:56
  */
 <template>
   <section :class="'column ver-hor-center ' + $i18n.locale">
+    <!--主标题-->
     <p class="title">{{ $t("home.title") }}</p>
+    <!--------->
+
+    <!--副标题-->
     <p class="sub-title">{{ $t("home.subtitle") }}</p>
+    <!--------->
+
+    <!--社交软件链接列表-->
     <div class="icon-list row ver-hor-center">
       <a
-        v-for="(item, index) in linkList"
+        v-for="(item, index) in SocialLinkList"
         :key="index"
         :href="item.href"
         target="_blank"
         ><i :class="'iconfont ' + item.icon"></i
       ></a>
     </div>
+    <!--------------->
   </section>
 </template>
 
 <script>
 export default {
   name: "home",
-  props: {
-    linkList: {
-      type: Array,
-      default: () => [
+  data() {
+    return {
+      SocialLinkList: [
         {
           icon: "icongithub",
           href: "https://github.com/JunLiangWang-X",
@@ -44,7 +51,7 @@ export default {
           href: "https://space.bilibili.com/339798658",
         },
       ],
-    },
+    };
   },
 };
 </script>
