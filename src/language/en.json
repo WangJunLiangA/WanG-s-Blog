@@ -10,5 +10,10 @@
   "home": {
     "title": "Hello World",
     "subtitle": "Please let me know you more before I leave you"
+  },
+  "foot":{
+      "goodSite":"GOODSITE",
+      "tellMe":"TELLME",
+      "aboutMe":"ABOUTME"
   }
 }

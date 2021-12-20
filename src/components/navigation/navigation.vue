@@ -3,7 +3,7 @@
  * @Desc:Hader Navigation
  * @Date: 2021-12-17 10:51:30 
  * @Last Modified by: JunLiang.Wang
- * @Last Modified time: 2021-12-20 09:41:40
+ * @Last Modified time: 2021-12-20 15:13:49
  * @props: (list) List of navigation bar options,the detail structure in props
            (title) navigation left title,the detail structure in props
  */
@@ -93,6 +93,9 @@
                   <!------------------->
                 </ul>
               </template>
+              <template v-slot:foot>
+                <foot></foot>
+              </template>
             </mobile-nav>
           </transition>
         </li>
@@ -111,6 +114,7 @@ import logo from "./components/logo.vue";
 import langChangeBtn from "./components/langChangeBtn.vue";
 import shrinkBtn from "./components/shrinkBtn.vue";
 import mobileNav from "./components/mobileNav.vue";
+import foot from "@/components/foot/foot.vue";
 export default {
   name: "navigation",
   props: {
@@ -166,6 +170,7 @@ export default {
     langChangeBtn,
     shrinkBtn,
     mobileNav,
+    foot,
   },
   methods: {
     //更改黑夜/白天模式

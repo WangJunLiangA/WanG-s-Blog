@@ -1,18 +1,21 @@
 /*
  * @Author: JunLiang.Wang 
  * @Date: 2021-12-20 12:05:55 
- * @Last Modified by:   JunLiang.Wang 
- * @Last Modified time: 2021-12-20 12:05:55 
+ * @Last Modified by: JunLiang.Wang
+ * @Last Modified time: 2021-12-20 15:35:59
  */
 <template>
   <section :class="'column ver-hor-center ' + $i18n.locale">
     <p class="title">{{ $t("home.title") }}</p>
     <p class="sub-title">{{ $t("home.subtitle") }}</p>
     <div class="icon-list row ver-hor-center">
-      <i class="iconfont icongithub"></i>
-      <i class="iconfont iconbilibilix"></i>
-      <i class="iconfont icontuitetwitter43"></i>
-      <i class="iconfont icongitee"></i>
+      <a
+        v-for="(item, index) in linkList"
+        :key="index"
+        :href="item.href"
+        target="_blank"
+        ><i :class="'iconfont ' + item.icon"></i
+      ></a>
     </div>
   </section>
 </template>
@@ -20,6 +23,29 @@
 <script>
 export default {
   name: "home",
+  props: {
+    linkList: {
+      type: Array,
+      default: () => [
+        {
+          icon: "icongithub",
+          href: "https://github.com/JunLiangWang-X",
+        },
+        {
+          icon: "icontuitetwitter43",
+          href: "https://twitter.com/dgvDTmueK8pFwAY",
+        },
+        {
+          icon: "icongitee",
+          href: "https://gitee.com/coder_wan",
+        },
+        {
+          icon: "iconbilibilix",
+          href: "https://space.bilibili.com/339798658",
+        },
+      ],
+    },
+  },
 };
 </script>
 
@@ -77,7 +103,9 @@ i:hover {
 .light i:hover {
   color: #676767;
 }
-
+a {
+  text-decoration: none;
+}
 @media (max-width: 730px) {
   .zh .title {
     font-size: 50px;

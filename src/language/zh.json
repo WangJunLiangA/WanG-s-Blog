@@ -10,5 +10,10 @@
     "home": {
         "title": "你好世界",
         "subtitle": "在我离开你之前，请让我多认识你一点"
+    },
+    "foot":{
+        "goodSite":"好站推荐",
+        "tellMe":"你对我说",
+        "aboutMe":"关于我的"
     }
 }

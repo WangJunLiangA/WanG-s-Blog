@@ -2,34 +2,35 @@
  * @Author: JunLiang.Wang 
  * @Date: 2021-12-18 01:11:47 
  * @Last Modified by: JunLiang.Wang
- * @Last Modified time: 2021-12-18 01:17:06
+ * @Last Modified time: 2021-12-20 15:13:53
  * @props: (display) Is the navigation bar displayed
  * @solt: logo and item 
  */
 <template>
   <div v-if="display" class="mo-nav-div">
     <div class="mo-nav-div-item row ver-hor-center">
-        <slot name="logo"></slot>
+      <slot name="logo"></slot>
     </div>
-       <slot name="item"></slot>
-    <p style="text-align: center">@2021 Site By JunLiangWang</p>
+    <slot name="item"></slot>
+    <div>
+      <slot name="foot"></slot>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: "mobileNav",
-  props:{
-      display:{
-          type:Boolean,
-          default:false
-      }
-  }
+  props: {
+    display: {
+      type: Boolean,
+      default: false,
+    },
+  },
 };
 </script>
 
 <style scoped>
-
 .mo-nav-div {
   position: fixed;
   z-index: 1000;
