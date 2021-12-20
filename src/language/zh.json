@@ -1,8 +1,14 @@
 {
-    "WanG": "汪阿汪",
-    "technology": "技术之美",
-    "book": "读书感悟",
-    "diary": "日记杂谈",
-    "project": "开源项目",
-    "journey": "大好河山"
+    "navigation": {
+        "WanG": "汪阿汪",
+        "technology": "技术之美",
+        "book": "读书感悟",
+        "diary": "日记杂谈",
+        "project": "开源项目",
+        "journey": "大好河山"
+    },
+    "home": {
+        "title": "你好世界",
+        "subtitle": "在我离开你之前，请让我多认识你一点"
+    }
 }

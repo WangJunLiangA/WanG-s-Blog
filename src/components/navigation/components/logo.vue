@@ -2,7 +2,7 @@
  * @Author: JunLiang.Wang 
  * @Date: 2021-12-17 17:05:44 
  * @Last Modified by: JunLiang.Wang
- * @Last Modified time: 2021-12-18 01:04:42
+ * @Last Modified time: 2021-12-20 09:40:09
  * @props: (name)logo display name
  * @methods: (logoClick) This event is triggered when the logo is clicked
  */
@@ -85,7 +85,7 @@
     <!----------------------------------------->
 
     <!--链接-->
-    <a class="title">{{ $t(name) }}</a>
+    <a class="title">{{ $t(langPre+name) }}</a>
     <!-------->
   </figure>
 </template>
@@ -99,6 +99,10 @@ export default {
       type: String,
       default: "",
     },
+    langPre:{
+      type:String,
+      default:"navigation."
+    }
   },
   methods: {
     //logo被点击事件

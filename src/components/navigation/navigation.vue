@@ -3,7 +3,7 @@
  * @Desc:Hader Navigation
  * @Date: 2021-12-17 10:51:30 
  * @Last Modified by: JunLiang.Wang
- * @Last Modified time: 2021-12-18 01:41:40
+ * @Last Modified time: 2021-12-20 09:41:40
  * @props: (list) List of navigation bar options,the detail structure in props
            (title) navigation left title,the detail structure in props
  */
@@ -16,6 +16,7 @@
           :name="title.name"
           @logoClick="$router.push(title.router)"
           class="header-logo"
+          :langPre="langPre"
         >
         </logo>
       </li>
@@ -32,7 +33,9 @@
           "
           :key="index"
         >
-          <a @click="$router.push(item.router)">{{ $t(item.name) }}</a>
+          <a @click="$router.push(item.router)">{{
+            $t(langPre + item.name)
+          }}</a>
         </li>
         <!------------------->
 
@@ -68,6 +71,7 @@
                 <logo
                   :name="title.name"
                   @logoClick="routerPage(title.router)"
+                  :langPre="langPre"
                 >
                 </logo>
               </template>
@@ -82,7 +86,9 @@
                     "
                     :key="index"
                   >
-                    <a @click="routerPage(item.router)">{{ $t(item.name) }}</a>
+                    <a @click="routerPage(item.router)">{{
+                      $t(langPre + item.name)
+                    }}</a>
                   </li>
                   <!------------------->
                 </ul>
@@ -101,7 +107,7 @@
 </template>
 
 <script>
-import logo from "./components/logo.vue"; 
+import logo from "./components/logo.vue";
 import langChangeBtn from "./components/langChangeBtn.vue";
 import shrinkBtn from "./components/shrinkBtn.vue";
 import mobileNav from "./components/mobileNav.vue";
@@ -115,7 +121,7 @@ export default {
         {
           //导航栏显示的标题
           name: "technology",
-          //路由地址 
+          //路由地址
           router: "/technology",
         },
         {
@@ -152,6 +158,7 @@ export default {
     return {
       //是否显示导航栏（mobile端）
       shrink: false,
+      langPre: "navigation.",
     };
   },
   components: {
@@ -204,11 +211,11 @@ header > .nav-ul {
   font-size: 1em;
   margin-left: 15px;
 }
-.modelBtn{
+.modelBtn {
   cursor: pointer;
 }
-.modelBtn:hover{
-    text-shadow: 0 0 12px #7c7979;
+.modelBtn:hover {
+  text-shadow: 0 0 12px #7c7979;
 }
 .item-btn {
   text-decoration: none;

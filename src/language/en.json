@@ -1,8 +1,14 @@
 {
-  "WanG": "WanG",
-  "technology": "technology",
-  "book": "book",
-  "diary": "diary",
-  "project": "project",
-  "journey": "journey"
+  "navigation": {
+    "WanG": "WanG",
+    "technology": "technology",
+    "book": "book",
+    "diary": "diary",
+    "project": "project",
+    "journey": "journey"
+  },
+  "home": {
+    "title": "Hello World",
+    "subtitle": "Please let me know you more before I leave you"
+  }
 }
