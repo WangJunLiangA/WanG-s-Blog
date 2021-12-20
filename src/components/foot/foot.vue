@@ -2,7 +2,7 @@
  * @Author: JunLiang.Wang 
  * @Date: 2021-12-20 15:35:44 
  * @Last Modified by: JunLiang.Wang
- * @Last Modified time: 2021-12-20 16:10:19
+ * @Last Modified time: 2021-12-20 16:52:10
  * @props: (footTitle) footer Title
            (linkList) footer link List
            (langPre) internationalization file prefix
@@ -52,7 +52,7 @@ export default {
         },
         {
           name: "tellMe",
-          router: "/home",
+          router: "/tellMe",
         },
         {
           name: "aboutMe",
