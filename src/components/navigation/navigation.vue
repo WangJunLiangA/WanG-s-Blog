@@ -3,7 +3,7 @@
  * @Desc:Hader Navigation
  * @Date: 2021-12-17 10:51:30 
  * @Last Modified by: JunLiang.Wang
- * @Last Modified time: 2021-12-20 16:02:13
+ * @Last Modified time: 2021-12-21 15:00:37
  * @props: (list) List of navigation bar options,the detail structure in props
            (title) navigation left title,the detail structure in props
  */
@@ -104,9 +104,6 @@
       <!---------------->
     </ul>
   </header>
-  <!--导航栏响应式适配
-      1.优化代码
-  -->
 </template>
 
 <script>
