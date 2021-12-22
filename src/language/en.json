@@ -20,5 +20,11 @@
   },
   "tellMe":{
     "content":"I once believed that I was an idealist, but later found out that I didn't even fully understand the reality. What about ideals? Once I felt that I must change the world, but then I found out that I misunderstood. My world is not everyone's world. My world is myself. All I can do is change myself. Now I have finally found something I can fight for for a lifetime, my girlfriend and hope to know more about the world before I leave this world!"
+  },
+  "goodSite":{
+    "goodSite":"GOODSITE",
+    "IconMmaterial":"IconMmaterial",
+    "ImgMmaterial":"ImageMmaterial",
+    "IllustrationMmaterial":"IllustrationMmaterial"
   }
 }

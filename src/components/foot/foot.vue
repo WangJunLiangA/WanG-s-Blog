@@ -2,7 +2,7 @@
  * @Author: JunLiang.Wang 
  * @Date: 2021-12-20 15:35:44 
  * @Last Modified by: JunLiang.Wang
- * @Last Modified time: 2021-12-21 17:49:12
+ * @Last Modified time: 2021-12-22 10:58:32
  * @props: (footTitle) footer Title
            (linkList) footer link List
            (langPre) internationalization file prefix
@@ -10,20 +10,20 @@
  */
 <template>
   <footer class="column ver-hor-center">
-
     <!--链接列表-->
     <div>
       <a
         v-for="(item, index) in linkList"
         :key="index"
         @click="$router.push(item.router)"
+        :style="color==''?'':'color:'+color+';border-color:'+color+';'"
         >{{ $t(langPre + item.name) }}</a
       >
     </div>
     <!------------>
 
     <!--脚标题-->
-    <p>{{ footTitle }}</p>
+    <p :class="isShrink?'shrink':''" :style="color==''?'':'color:'+color+';'">{{ footTitle }}</p>
     <!--------->
   </footer>
 </template>
@@ -60,6 +60,14 @@ export default {
         },
       ],
     },
+    color:{
+      type:String,
+      default:""
+    },
+    isShrink:{
+      type:Boolean,
+      default:false,
+    }
   },
 };
 </script>
@@ -91,5 +99,10 @@ a {
 .light a:hover {
   color: #dbdbdb;
   font-size: 14px;
+}
+@media (max-width: 740px) {
+  .shrink{
+    display: none;
+  }
 }
 </style>

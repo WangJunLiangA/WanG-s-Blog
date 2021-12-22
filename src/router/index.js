@@ -40,9 +40,25 @@ const routes = [{
       component: () => import('@/views/technology.vue'),
     }]
   },{
-    name: 'tellMe',
-    path: "/tellMe",
-    component: () => import('@/views/tellMe.vue'),
+    name: 'subPage',
+    path: "/subPage",
+    component: () => import('@/views/subPage/subPage.vue'),
+    children: [{
+      path: '',
+      redirect: "/tellMe"
+    },{
+      name: 'tellMe',
+      path: "/tellMe",
+      component: () => import('@/views/subPage/tellMe/tellMe.vue'),
+    },{
+      name: 'goodSite',
+      path: "/goodSite",
+      component: () => import('@/views/subPage/goodSite/goodSite.vue'),
+    },{
+      name: 'aboutMe',
+      path: "/aboutMe",
+      component: () => import('@/views/subPage/aboutMe/aboutMe.vue'),
+    },]
   },
   /*{
     path: '/about',
