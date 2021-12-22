@@ -11,11 +11,12 @@ import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI);
 //国际化
 import i18n from './language/i18n'
+//自定义配置
+import config from './config/index'
+Vue.prototype.config = config;
 
 import "./assets/css/normalize.css"
 import "./assets/css/index.css"
-
-
 Vue.config.productionTip = false
 new Vue({
   router,

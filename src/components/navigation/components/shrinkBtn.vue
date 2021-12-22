@@ -2,7 +2,7 @@
  * @Author: JunLiang.Wang 
  * @Date: 2021-12-18 00:31:42 
  * @Last Modified by: JunLiang.Wang
- * @Last Modified time: 2021-12-18 01:08:22
+ * @Last Modified time: 2021-12-21 17:58:56
  * @props: (v-model) shrink(false) or open(true) two state
  * @methods: none
  */
@@ -20,31 +20,30 @@
 
 <script>
 export default {
-    name:"shrinkBtn",
-    props:{
-        value:{
-            type:Boolean,
-            default:false
-        }
+  name: "shrinkBtn",
+  props: {
+    value: {
+      type: Boolean,
+      default: false,
     },
-    data(){
-        return {
-            shrink:this.value
-        }
+  },
+  data() {
+    return {
+      shrink: this.value,
+    };
+  },
+  watch: {
+    value(val) {
+      this.shrink = val;
     },
-    watch:{
-        value(val){
-            this.shrink=val
-        },
-        shrink(val){
-            this.$emit("input",val);
-        }
-    }
+    shrink(val) {
+      this.$emit("input", val);
+    },
+  },
 };
 </script>
 
 <style scoped>
-
 .shrink-div {
   height: 18px;
   width: 20px;
@@ -81,7 +80,6 @@ export default {
 .close .hor-line:last-child {
   transform: translateY(-200%) rotate(-45deg);
 }
-
 
 @media (max-width: 730px) {
   .shrink-div {

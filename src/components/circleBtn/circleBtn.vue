@@ -1,7 +1,7 @@
 <template>
   <div class="btn" @click="iconClick">
     <i  :class="'iconfont '+icon"></i>
-    <span class="tooltiptext">{{tiptext}}</span>
+    <span class="tooltiptext">{{$t(langPre+tiptext)}}</span>
   </div>
 </template>
 
@@ -14,6 +14,10 @@ export default {
             default:""
         },
         tiptext:{
+            type:String,
+            default:""
+        },
+        langPre:{
             type:String,
             default:""
         }

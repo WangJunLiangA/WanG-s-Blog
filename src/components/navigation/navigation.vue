@@ -3,9 +3,11 @@
  * @Desc:Hader Navigation
  * @Date: 2021-12-17 10:51:30 
  * @Last Modified by: JunLiang.Wang
- * @Last Modified time: 2021-12-21 15:00:37
+ * @Last Modified time: 2021-12-21 18:22:35
  * @props: (list) List of navigation bar options,the detail structure in props
            (title) navigation left title,the detail structure in props
+           (languageList)Store a list of all languages. See props for the specific structure
+           (langPre) internationalization file prefix
  */
 <template>
   <header>
@@ -56,6 +58,7 @@
         <!--语言切换-->
         <li class="nav-item">
           <lang-change-btn
+            :languageList="languageList"
             :currentLanguage="$i18n.locale"
             @changeCommand="handleCommand"
           ></lang-change-btn>
@@ -94,7 +97,7 @@
                 </ul>
               </template>
               <template v-slot:foot>
-                <foot></foot>
+                <slot></slot>
               </template>
             </mobile-nav>
           </transition>
@@ -111,7 +114,6 @@ import logo from "./components/logo.vue";
 import langChangeBtn from "./components/langChangeBtn.vue";
 import shrinkBtn from "./components/shrinkBtn.vue";
 import mobileNav from "./components/mobileNav.vue";
-import foot from "@/components/foot/foot.vue";
 export default {
   name: "navigation",
   props: {
@@ -143,6 +145,7 @@ export default {
         },
       ],
     },
+    //标题
     title: {
       type: Object,
       default: () => {
@@ -154,9 +157,27 @@ export default {
         };
       },
     },
+    //语言前缀
     langPre: {
       type:String,
       default:"navigation."
+    },
+    //语言列表
+    languageList: {
+      type: Object,
+      default: () => {
+        return {
+          //语言Key,与i8n中的key对应
+          zh: {
+            itemTitle: "简体中文", //列表选项中显示的标题
+            displayTitle:"简"   //选中后按钮显示的值
+          },
+          en:{
+            itemTitle: "English",
+            displayTitle:"EN"
+          }
+        };
+      },
     },
   },
   data() {
@@ -170,7 +191,6 @@ export default {
     langChangeBtn,
     shrinkBtn,
     mobileNav,
-    foot,
   },
   methods: {
     //更改黑夜/白天模式

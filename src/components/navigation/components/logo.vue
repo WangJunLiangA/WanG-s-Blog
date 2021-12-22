@@ -2,9 +2,8 @@
  * @Author: JunLiang.Wang 
  * @Date: 2021-12-17 17:05:44 
  * @Last Modified by: JunLiang.Wang
- * @Last Modified time: 2021-12-20 16:07:20
+ * @Last Modified time: 2021-12-21 18:22:57
  * @props: (name)logo display name
-           (langPre)internationalization file prefix
  * @methods: (logoClick) This event is triggered when the logo is clicked
  */
 
