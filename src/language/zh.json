@@ -26,6 +26,8 @@
         "IconMmaterial":"图标素材",
         "ImgMmaterial":"图片素材",
         "IllustrationMmaterial":"插画素材",
-        "UIDesign":"UI设计"
+        "UIDesign":"UI设计",
+        "videoMmaterial":"视频素材",
+        "soundMmaterial":"音频素材"
     }
 }

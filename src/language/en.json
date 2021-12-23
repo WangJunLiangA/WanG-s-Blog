@@ -26,6 +26,8 @@
     "IconMmaterial":"Icon Mmaterial",
     "ImgMmaterial":"Image Mmaterial",
     "IllustrationMmaterial":"Illustration Mmaterial",
-    "UIDesign":"UI Design"
+    "UIDesign":"UI Design",
+    "videoMmaterial":"Video Mmaterial",
+    "soundMmaterial":"Sound Mmaterial"
   }
 }

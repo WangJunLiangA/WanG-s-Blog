@@ -176,6 +176,62 @@ export default {
     },
     ]
   },{
+    class: "videoMmaterial",
+    siteList: [{
+      icon: "https://www.pexels.com/assets/icons/apple-touch-icon-06fc98261c772fe20d584aba2336ad2bb32dffced6ec5470b03228548042f162.png",
+      detail: "免费视频",
+      name: "pexels",
+      href: "https://www.pexels.com/videos/"
+    },{
+      icon: "https://wedistill.io/assets/logo-color-ba61b0fd64d69d47f1bcb6d868cf1ca4.png",
+      detail: "精选高清视频免费供您个人和商业使用",
+      name: "wedistill",
+      href: "https://wedistill.io/"
+    },{
+      icon: "https://mazwai.com/assets/images/svg/logo.svg",
+      detail: "令人惊叹的免费素材片段",
+      name: "mazwai",
+      href: "https://mazwai.com/"
+    },{
+      icon: "https://www.videezy.com/favicon.png",
+      detail: "免费4K视频素材",
+      name: "videezy",
+      href: "https://www.videezy.com/"
+    }]
+  },{
+    class: "soundMmaterial",
+    siteList: [{
+      icon: "https://www.ear0.com/public/images/favicon.ico",
+      detail: "声音地图",
+      name: "耳聆",
+      href: "https://www.ear0.com/sound"
+    },{
+      icon: "https://cdn-sqn.aigei.com/assets/site/img/icon/favicon.ico",
+      detail: "专注免费素材",
+      name: "爱给网",
+      href: "https://www.aigei.com/"
+    },{
+      icon: "https://www.tosound.com/favicon.ico",
+      detail: "探索全球声音资源",
+      name: "淘声网",
+      href: "https://www.tosound.com/"
+    },{
+      icon: "https://cdn.musicbed.com/image/upload/v1523550146/favicons/android-icon-192x192.png",
+      detail: "为你寻找最好歌曲",
+      name: "musicbed",
+      href: "https://www.musicbed.com/"
+    },{
+      icon: "https://www.jamendo.com/Client/assets/toolkit/images/icon/android-chrome-192x192.1626433529657.png",
+      detail: "音乐素材",
+      name: "jamendo",
+      href: "https://www.jamendo.com/"
+    },{
+      icon: "https://cdn.audiolibrary.com.co/themes/ytalc/assets/favicon/android-chrome-192x192.png",
+      detail: "免费音乐平台",
+      name: "audiolibrary",
+      href: "https://www.audiolibrary.com.co/"
+    }]
+  },{
     class: "IllustrationMmaterial",
     siteList: [{
       icon: "https://www.manypixels.co/favicon.svg",
