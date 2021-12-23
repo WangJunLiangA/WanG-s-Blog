@@ -23,8 +23,9 @@
   },
   "goodSite":{
     "goodSite":"GOODSITE",
-    "IconMmaterial":"IconMmaterial",
-    "ImgMmaterial":"ImageMmaterial",
-    "IllustrationMmaterial":"IllustrationMmaterial"
+    "IconMmaterial":"Icon Mmaterial",
+    "ImgMmaterial":"Image Mmaterial",
+    "IllustrationMmaterial":"Illustration Mmaterial",
+    "UIDesign":"UI Design"
   }
 }

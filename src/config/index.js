@@ -178,36 +178,63 @@ export default {
   },{
     class: "IllustrationMmaterial",
     siteList: [{
-      icon: "https://www.pexels.com/assets/icons/apple-touch-icon-06fc98261c772fe20d584aba2336ad2bb32dffced6ec5470b03228548042f162.png",
-      detail: "才华横溢创作者分享的图片",
-      name: "pexels",
-      href: "https://www.pexels.com/"
+      icon: "https://www.manypixels.co/favicon.svg",
+      detail: "免费插画画廊",
+      name: "manypixels",
+      href: "https://www.manypixels.co/gallery"
     },{
-      icon: "https://unsplash.com/apple-touch-icon.png",
-      detail: "精美免费图片",
-      name: "unsplash",
-      href: "https://unsplash.com/"
+      icon: "https://assets.website-files.com/5bff8886c3964a992e90d465/5c00a0ce59aa851331d34687_favicon-256.png",
+      detail: "具有设计库的人物混合搭配插图",
+      name: "humaaans",
+      href: "https://www.humaaans.com/"
     },{
-      icon: "https://www.hippopx.com/public/css/favicon.ico",
-      detail: "基于CC0协议的免版权图库",
-      name: "hippopx",
-      href: "https://www.hippopx.com/"
+      icon: "https://iradesign.io/assets/img/favicon.svg",
+      detail: "发现 IRA 插图以增强您的项目",
+      name: "IRA Design",
+      href: "https://iradesign.io/gallery/illustrations"
     },{
-      icon: "https://colorhub.me/colorhub.png",
-      detail: "免费高清无版权的图片资源库",
-      name: "colorhub",
-      href: "https://colorhub.me/"
+      icon: "https://app.streamlinehq.com/_next/static/image/public/favicon.3e66caaaab52f38e5a5674b0aa669e1b.png",
+      detail: "友好色彩丰富的插画库 ",
+      name: "streamlinehq",
+      href: "https://app.streamlinehq.com/illustrations/illustrations-multicolor"
     },{
-      icon: "https://visualhunt.com/favicon.ico",
-      detail: "根据指定颜色寻找图片",
-      name: "visualhunt",
-      href: "https://visualhunt.com/"
+      icon: "https://assets-global.website-files.com/5bcb46130508ef456a7b2930/5d3e60f773102c8158c55778_drawkit.png",
+      detail: "美丽免费的插画库",
+      name: "drawkit",
+      href: "https://drawkit.com/"
     },{
-      icon: "https://picjumbo.com/safari-pinned-tab.svg",
-      detail: "各种免费照片的站点",
-      name: "picjumbo",
-      href: "https://picjumbo.com/"
-    },
-    ]
+      icon: "https://assets.website-files.com/5d5d5904f8a21bfe5ff69367/5da4e9a454896ed80730e86b_icon-256w.png",
+      detail: "一套免费的开源插图!",
+      name: "opendoodles",
+      href: "https://www.opendoodles.com/"
+    },]
+  },{
+    class: "UIDesign",
+    siteList: [{
+      icon: "https://cdn.dribbble.com/assets/dribbble-ball-192-23ecbdf987832231e87c642bb25de821af1ba6734a626c8c259a20a0ca51a247.png",
+      detail: "发现世界最好的设计",
+      name: "dribbble",
+      href: "https://dribbble.com/"
+    },{
+      icon: "https://screenlane.com//static/website/images/icons/android-icon-192x192.png",
+      detail: "APP UI交互",
+      name: "screenlane",
+      href: "https://screenlane.com/"
+    },{
+      icon: "https://collectui.com/img/favicon.ico",
+      detail: "UI设计灵感收集",
+      name: "collectui",
+      href: "https://collectui.com/"
+    },{
+      icon: "https://reeoo.com/assets/favicon.ico",
+      detail: "网页以及APP UI设计 ",
+      name: "reeoo",
+      href: "https://reeoo.com/"
+    },{
+      icon: "https://assets.awwwards.com/assets/images/favicon.svg",
+      detail: "最好的网页设计",
+      name: "awwwards",
+      href: "https://www.awwwards.com/"
+    }]
   }]
 }
