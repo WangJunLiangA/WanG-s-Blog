@@ -14,6 +14,10 @@ import i18n from './language/i18n'
 //自定义配置
 import config from './config/index'
 Vue.prototype.config = config;
+// markdown样式
+import 'github-markdown-css'
+// 代码高亮
+import 'highlight.js/styles/github.css'
 
 import "./assets/css/normalize.css"
 import "./assets/css/index.css"
