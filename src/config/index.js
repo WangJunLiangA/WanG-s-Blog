@@ -265,6 +265,29 @@ export default {
       href: "https://www.opendoodles.com/"
     },]
   },{
+    class: "fontMmaterial",
+    siteList: [{
+      icon: "https://resources.17font.com/fontfree/favicon.ico",
+      detail: "免费字体发布平台",
+      name: "51Font",
+      href: "https://51font.17font.com/font"
+    },{
+      icon: "https://cdn2.ziyouziti.com/favicon.png",
+      detail: "汇聚全网免费字体",
+      name: "自由字体",
+      href: "https://ziyouziti.com/index-index-all.html"
+    },{
+      icon: "https://img.zaosj.cn/9775f9deac07c31d6e80949981f04e2ee533d414.ico?v=w",
+      detail: "全部字体免费商用",
+      name: "躁设网",
+      href: "https://www.zaosj.cn/home/font/index/lang/1.html"
+    },{
+      icon: "https://m.fonts.net.cn/favicon.ico",
+      detail: "字体大全",
+      name: "字体之家",
+      href: "https://www.fonts.net.cn/commercial-free/fonts-zh-1.html"
+    }]
+  },{
     class: "UIDesign",
     siteList: [{
       icon: "https://cdn.dribbble.com/assets/dribbble-ball-192-23ecbdf987832231e87c642bb25de821af1ba6734a626c8c259a20a0ca51a247.png",
