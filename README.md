@@ -1,3 +1,3 @@
 # wangblog
 
-See https://junliangwang-x.github.io/WanG-s-Blog/
+See https://junliangwang-x.github.io/WanG-s-Blog/dist/
